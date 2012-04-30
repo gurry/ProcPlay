@@ -9,17 +9,26 @@
 	<script type="text/javascript" src="../lib/paper.js"></script>
 	
 	<script type="text/paperscript" canvas="schematic">
-		var baseSize = new Size(200, 200);
-		var baseTopLeft = new Point(view.center.x - baseSize.width / 2, view.center.y);
-		var base = new Path.Rectangle(baseTopLeft , baseSize);
-		base.fillColor = '#3c3c3c';
+		// var baseSize = new Size(200, 200);
+		// var baseTopLeft = new Point(view.center.x - baseSize.width / 2, view.center.y);
+		// var base = new Path.Rectangle(baseTopLeft , baseSize);
+		// base.fillColor = ;
 
+		drawSolidRect(view.center, 200, 200, '#3c3c3c')
+		drawSolidRect(view.center, 140, 140, '#004c00')
 
-		var raisedSurfaceSize = new Size(140, 140);
-		var raisedSurfaceTopLeft = new Point(view.center.x - raisedSurfaceSize.width / 2, view.center.y);
-		var raisedSurface = new Path.Rectangle(raisedSurfaceTopLeft , raisedSurfaceSize);
-		raisedSurface.fillColor = '#004c00';
+		// var raisedSurfaceSize = new Size(140, 140);
+		// var raisedSurfaceTopLeft = new Point(view.center.x - raisedSurfaceSize.width / 2, view.center.y);
+		// var raisedSurface = new Path.Rectangle(raisedSurfaceTopLeft , raisedSurfaceSize);
+		// raisedSurface.fillColor = '#004c00';
 
+		function drawSolidRect(center, width, height, color)
+		{
+			var topLeft = new Point(center.x - width / 2, center.y - height / 2);
+			var size = new Size(width, height);
+			var rect = new Path.Rectangle(topLeft , size);
+			rect.fillColor = color;
+		}
     </script>
 </head>
 <body>

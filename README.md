@@ -1,6 +1,6 @@
 ProcPlay
 ========
 
-A x86 processor simulator you can play with. 
+An x86 processor simulator you can play with. 
 
-"Play with" is the key.
+"Play with" has got all the emphasis.

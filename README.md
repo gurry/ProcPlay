@@ -1,4 +1,4 @@
 ProcPlay
 ========
 
-A interactive x86 processor simulator.
+An interactive x86 processor simulator.
